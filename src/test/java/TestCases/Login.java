@@ -70,8 +70,8 @@ public class Login {
 
     public String randomEmail (){
         Date date = new Date();
-        return date.toString().replace(" ","_").replace(":","_");
-
+        String timestamp =  date.toString().replace(" ","_").replace(":","_");
+        return  "test" + timestamp + ""
     }
 
     @Test(priority = 3)
